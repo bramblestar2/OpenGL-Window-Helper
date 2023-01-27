@@ -150,15 +150,19 @@
   <ItemGroup>
     <ClCompile Include="src\Graphics\ContextSettings\ContextSettings.cpp" />
     <ClCompile Include="src\Graphics\Events\EventHandler.cpp" />
+    <ClCompile Include="src\Graphics\Vertex\VertexBuffer.cpp" />
     <ClCompile Include="src\Setup.cpp" />
     <ClCompile Include="src\Graphics\Window.cpp" />
+    <ClCompile Include="src\System\Clock\Clock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Graphics\ContextSettings\ContextSettings.h" />
     <ClInclude Include="src\Graphics\Events\Event.h" />
     <ClInclude Include="src\Graphics\Events\EventHandler.h" />
+    <ClInclude Include="src\Graphics\Vertex\VertexBuffer.h" />
     <ClInclude Include="src\Setup.h" />
     <ClInclude Include="src\Graphics\Window.h" />
+    <ClInclude Include="src\System\Clock\Clock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -32,6 +32,7 @@ namespace jf
 		void clear();
 		void display();
 
+		GLFWwindow* operator*() { return m_window; };
 	private:
 		GLFWwindow* m_window;
 		EventHandler event_handler;

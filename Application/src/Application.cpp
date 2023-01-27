@@ -1,9 +1,10 @@
 #include <iostream>
 #include "Graphics/Window.h"
+#include "System/Clock/Clock.h"
 
 void error_callback(int error, const char* description)
 {
-	printf(description + '\n');
+	std::cout << description << "\n";
 }
 
 int main()
@@ -12,7 +13,6 @@ int main()
 		return -1;
 
 	glfwSetErrorCallback(error_callback);
-
 
 	jf::ContextSettings settings;
 	jf::Window window(glm::vec2(300,300), "Title", settings /* Optional */);
@@ -51,7 +51,7 @@ int main()
 
 		glBegin(GL_QUADS);
 
-		glColor3f(x, y, 1/(x * y));
+		glColor3f(x, y, 1/(x + y));
 		glVertex2f(-0.5f, -0.5f);
 		glVertex2f(-0.5f, 0.5f);
 		glVertex2f(0.5f, 0.5f);
