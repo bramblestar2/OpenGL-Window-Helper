@@ -6,6 +6,8 @@ namespace jf
 {
 	Window::Window(const glm::vec2& window_size, std::string title)
 	{
+		//const GLFWvidmode* mode = glfwGetVideoMode();
+
 		m_window = glfwCreateWindow(window_size.x, window_size.y, title.c_str(), NULL, NULL);
 		setContextCurrent();
 	}

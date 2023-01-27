@@ -14,5 +14,7 @@ namespace jf
 		int m_antiAliasing;
 		int m_minorVersion;
 		int m_majorVersion;
+
+		
 	};
 }
