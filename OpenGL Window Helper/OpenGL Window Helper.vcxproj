@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="src\Graphics\ContextSettings\ContextSettings.cpp" />
     <ClCompile Include="src\Graphics\Events\EventHandler.cpp" />
+    <ClCompile Include="src\Graphics\Mouse\Mouse.cpp" />
     <ClCompile Include="src\Graphics\Vertex\VertexBuffer.cpp" />
     <ClCompile Include="src\Setup.cpp" />
     <ClCompile Include="src\Graphics\Window.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="src\Graphics\ContextSettings\ContextSettings.h" />
     <ClInclude Include="src\Graphics\Events\Event.h" />
     <ClInclude Include="src\Graphics\Events\EventHandler.h" />
+    <ClInclude Include="src\Graphics\Mouse\Mouse.h" />
     <ClInclude Include="src\Graphics\Vertex\VertexBuffer.h" />
     <ClInclude Include="src\Setup.h" />
     <ClInclude Include="src\Graphics\Window.h" />
