@@ -18,10 +18,11 @@ namespace jf
 
         return glm::vec2(mousePos) + glm::vec2(windowPos);
     }
+
     glm::vec2 Mouse::getPosition(GLFWwindow* window)
     {
         glm::vec<2, double, glm::packed_highp> pos;
         glfwGetCursorPos(window, &pos.x, &pos.y);
-        return glm::vec2();
+        return glm::vec2(pos);
     }
 }

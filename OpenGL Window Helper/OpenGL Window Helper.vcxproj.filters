@@ -15,51 +15,51 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Graphics\Window.cpp">
+    <ClCompile Include="src\WindowHelper\Graphics\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Setup.cpp">
+    <ClCompile Include="src\WindowHelper\Setup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Graphics\ContextSettings\ContextSettings.cpp">
+    <ClCompile Include="src\WindowHelper\Graphics\ContextSettings\ContextSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Graphics\Events\EventHandler.cpp">
+    <ClCompile Include="src\WindowHelper\Graphics\Events\EventHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Graphics\Vertex\VertexBuffer.cpp">
+    <ClCompile Include="src\WindowHelper\Graphics\Vertex\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\System\Clock\Clock.cpp">
+    <ClCompile Include="src\WindowHelper\System\Clock\Clock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Graphics\Mouse\Mouse.cpp">
+    <ClCompile Include="src\WindowHelper\Graphics\Mouse\Mouse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Graphics\Window.h">
+    <ClInclude Include="src\WindowHelper\Graphics\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Setup.h">
+    <ClInclude Include="src\WindowHelper\Setup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\ContextSettings\ContextSettings.h">
+    <ClInclude Include="src\WindowHelper\Graphics\ContextSettings\ContextSettings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\Events\Event.h">
+    <ClInclude Include="src\WindowHelper\Graphics\Events\Event.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\Events\EventHandler.h">
+    <ClInclude Include="src\WindowHelper\Graphics\Events\EventHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\Vertex\VertexBuffer.h">
+    <ClInclude Include="src\WindowHelper\Graphics\Vertex\VertexBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\System\Clock\Clock.h">
+    <ClInclude Include="src\WindowHelper\System\Clock\Clock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\Mouse\Mouse.h">
+    <ClInclude Include="src\WindowHelper\Graphics\Mouse\Mouse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

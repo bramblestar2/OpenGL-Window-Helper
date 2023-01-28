@@ -45,6 +45,16 @@ namespace jf
 		glfwSetWindowSize(m_window, size.x, size.y);
 	}
 
+	void Window::setTitle(const std::string title)
+	{
+		glfwSetWindowTitle(m_window, title.c_str());
+	}
+
+	void Window::setVisible(const bool visible)
+	{
+		glfwSetWindowAttrib(m_window, GLFW_VISIBLE, visible ? 1 : 0);
+	}
+
 	void Window::close()
 	{
 		glfwSetWindowShouldClose(m_window, 1);
@@ -81,6 +91,11 @@ namespace jf
 		glm::vec<2, int, glm::packed_highp> size;
 		glfwGetWindowSize(m_window, &size.x, &size.y);
 		return glm::vec2(size);
+	}
+
+	bool Window::isVisible() const
+	{
+		return glfwGetWindowAttrib(m_window, GLFW_VISIBLE);
 	}
 
 	bool Window::isOpen()

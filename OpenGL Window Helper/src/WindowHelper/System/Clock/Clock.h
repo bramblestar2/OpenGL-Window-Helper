@@ -7,9 +7,9 @@ namespace jf
 	public:
 		Clock();
 
-		float getSeconds();
-		float reset();
+		double getSeconds();
+		double reset();
 	private:
-		float m_lastReset;
+		double m_lastReset;
 	};
 }

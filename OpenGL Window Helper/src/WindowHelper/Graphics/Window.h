@@ -17,6 +17,8 @@ namespace jf
 		void setContextCurrent();
 		void setPosition(const glm::vec2& position);
 		void setSize(const glm::vec2& size);
+		void setTitle(const std::string title);
+		void setVisible(const bool visible);
 		void close();
 
 		bool pollEvent(Event& event);
@@ -25,6 +27,7 @@ namespace jf
 		GLFWwindow* getWindow();
 		glm::vec2 getPosition() const;
 		glm::vec2 getSize() const;
+		bool isVisible() const;
 		bool isOpen();
 
 		void clear(const glm::vec4& color);
