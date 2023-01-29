@@ -148,8 +148,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\External\stb_image\stb_image.cpp" />
     <ClCompile Include="src\WindowHelper\Graphics\ContextSettings\ContextSettings.cpp" />
     <ClCompile Include="src\WindowHelper\Graphics\Events\EventHandler.cpp" />
+    <ClCompile Include="src\WindowHelper\Graphics\Image\Image.cpp" />
     <ClCompile Include="src\WindowHelper\Graphics\Mouse\Mouse.cpp" />
     <ClCompile Include="src\WindowHelper\Graphics\Vertex\VertexBuffer.cpp" />
     <ClCompile Include="src\WindowHelper\Setup.cpp" />
@@ -157,9 +159,11 @@
     <ClCompile Include="src\WindowHelper\System\Clock\Clock.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\External\stb_image\stb_image.h" />
     <ClInclude Include="src\WindowHelper\Graphics\ContextSettings\ContextSettings.h" />
     <ClInclude Include="src\WindowHelper\Graphics\Events\Event.h" />
     <ClInclude Include="src\WindowHelper\Graphics\Events\EventHandler.h" />
+    <ClInclude Include="src\WindowHelper\Graphics\Image\Image.h" />
     <ClInclude Include="src\WindowHelper\Graphics\Mouse\Mouse.h" />
     <ClInclude Include="src\WindowHelper\Graphics\Vertex\VertexBuffer.h" />
     <ClInclude Include="src\WindowHelper\Setup.h" />

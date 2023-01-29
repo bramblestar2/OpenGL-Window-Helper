@@ -8,6 +8,12 @@ BetterWindow::BetterWindow()
 
 	if (glewInit() != GLEW_OK)
 		return;
+
+	jf::Image image;
+	image.loadFromFile("src/test.png");
+
+
+	glfwSetWindowIcon(**m_window, 1, *image);
 }
 
 
@@ -72,16 +78,18 @@ void BetterWindow::render()
 	float time = glfwGetTime();
 	float x = abs(sin(time));
 	float y = abs(cos(time));
+	float xx = (sin(time) * 5);
+	float yy = (cos(time) * 5);
 
 	glm::vec2 mouse_pos = jf::Mouse::getPosition(**m_window);
 
 	glBegin(GL_QUADS);
 	m_window->getSize().x;
 	glColor3f(x, y, 1 / (x + y));
-	glVertex2f(-0.5f + (sin(time)), -0.5f + (cos(time)));
-	glVertex2f(-0.5f + (sin(time)),  0.5f + (cos(time)));
-	glVertex2f(0.5f  + (sin(time)),  0.5f + (cos(time)));
-	glVertex2f(0.5f  + (sin(time)), -0.5f + (cos(time)));
+	glVertex2f(-0.5f + (sin(time + xx)), -0.5f + (cos(time + yy)));
+	glVertex2f(-0.5f + (sin(time + xx)),  0.5f + (cos(time + yy)));
+	glVertex2f(0.5f  + (sin(time + xx)),  0.5f + (cos(time + yy)));
+	glVertex2f(0.5f  + (sin(time + xx)), -0.5f + (cos(time + yy)));
 
 	glEnd();
 

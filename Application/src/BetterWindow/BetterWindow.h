@@ -2,6 +2,7 @@
 #include "WindowHelper/Graphics/Window.h"
 #include "WindowHelper/System/Clock/Clock.h"
 #include "WindowHelper/Graphics/Mouse/Mouse.h"
+#include "WindowHelper/Graphics/Image/Image.h"
 
 //I couldn't think of another name for this class
 class BetterWindow
