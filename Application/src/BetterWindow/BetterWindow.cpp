@@ -10,11 +10,13 @@ BetterWindow::BetterWindow()
 		return;
 }
 
+
 BetterWindow::~BetterWindow()
 {
 	if (m_window != nullptr)
 		delete m_window;
 }
+
 
 void BetterWindow::run()
 {
@@ -27,6 +29,7 @@ void BetterWindow::run()
 	}
 }
 
+
 void BetterWindow::update()
 {
 }
@@ -35,6 +38,7 @@ void BetterWindow::updateDT()
 {
 	m_deltaTime = m_clock.reset();
 }
+
 
 void BetterWindow::updateEvents()
 {
@@ -55,11 +59,11 @@ void BetterWindow::updateEvents()
 				}
 				break;
 			}
-
 			break;
 		}
 	}
 }
+
 
 void BetterWindow::render()
 {
@@ -69,18 +73,21 @@ void BetterWindow::render()
 	float x = abs(sin(time));
 	float y = abs(cos(time));
 
-	glBegin(GL_QUADS);
+	glm::vec2 mouse_pos = jf::Mouse::getPosition(**m_window);
 
+	glBegin(GL_QUADS);
+	m_window->getSize().x;
 	glColor3f(x, y, 1 / (x + y));
-	glVertex2f(-0.5f, -0.5f);
-	glVertex2f(-0.5f, 0.5f);
-	glVertex2f(0.5f, 0.5f);
-	glVertex2f(0.5f, -0.5f);
+	glVertex2f(-0.5f + (sin(time)), -0.5f + (cos(time)));
+	glVertex2f(-0.5f + (sin(time)),  0.5f + (cos(time)));
+	glVertex2f(0.5f  + (sin(time)),  0.5f + (cos(time)));
+	glVertex2f(0.5f  + (sin(time)), -0.5f + (cos(time)));
 
 	glEnd();
 
 	m_window->display();
 }
+
 
 void BetterWindow::initWindow()
 {
