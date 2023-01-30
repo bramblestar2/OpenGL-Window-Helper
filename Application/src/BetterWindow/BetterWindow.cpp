@@ -84,7 +84,7 @@ void BetterWindow::render()
 	glm::vec2 mouse_pos = jf::Mouse::getPosition(**m_window);
 
 	glBegin(GL_QUADS);
-	m_window->getSize().x;
+	
 	glColor3f(x, y, 1 / (x + y));
 	glVertex2f(-0.5f + (sin(time + xx)), -0.5f + (cos(time + yy)));
 	glVertex2f(-0.5f + (sin(time + xx)),  0.5f + (cos(time + yy)));

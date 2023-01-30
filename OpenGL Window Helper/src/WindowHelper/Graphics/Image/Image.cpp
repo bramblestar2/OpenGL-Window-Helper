@@ -19,7 +19,7 @@ namespace jf
 	{
 		int width, height, channels_in_file;
 		m_data = stbi_load(file_path.c_str(), &width, &height, &channels_in_file, 0);
-		std::cout << channels_in_file << std::endl;
+
 		if (!m_data)
 			std::cout << "Image failed to load: " << file_path << std::endl;
 
